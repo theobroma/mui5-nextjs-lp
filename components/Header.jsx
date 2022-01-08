@@ -5,7 +5,8 @@ import { styled } from "@mui/system";
 import IconButton from "@mui/material/IconButton"
 import Home from "@mui/icons-material/Home"
 import MuiNextLink from "@components/MuiNextLink";
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import SideDrawer from "./SideDrawer";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -37,6 +38,7 @@ const Header = () => {
               </MuiNextLink>
             </IconButton>
             <Navbar navLinks={navLinks} />
+            <SideDrawer navLinks={navLinks} />
           </Container>
         </Toolbar>
       </AppBar>
