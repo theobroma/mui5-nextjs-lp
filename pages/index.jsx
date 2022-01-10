@@ -1,6 +1,8 @@
 import Container from "@mui/material/Container";
 import Hero from '@components/Hero'
 import SectionAbout from "@components/SectionAbout";
+import SectionImage from "@components/SectionImage";
+
 
 const Homepage = () => {
   return (
@@ -12,6 +14,7 @@ const Homepage = () => {
         subtitle="Best Western &amp; Japanese Fusion Restaurant In Town"
       />
       <SectionAbout />
+      <SectionImage imgSrc="/fusion-food.jpg" imgAlt="fusion food" />
       <Container maxWidth="sm">
         <h1>Home Page</h1>
         <p>
